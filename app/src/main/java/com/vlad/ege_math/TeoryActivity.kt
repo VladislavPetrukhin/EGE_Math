@@ -3,6 +3,7 @@ package com.vlad.ege_math
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Html
 import android.view.MenuItem
 import androidx.databinding.DataBindingUtil
 import androidx.preference.PreferenceManager
@@ -23,7 +24,7 @@ class TeoryActivity : AppCompatActivity() {
 
         var position = intent.getIntExtra("position",1).toString()
         var textResourceId = resources.getIdentifier("text$position","string",packageName)
-        binding.teoryTextView.text = resources.getString(textResourceId)  //выбираем текст в зависимости от позиции на которую нажали в recyclerview
+            binding.teoryTextView.text = resources.getText(textResourceId)  //выбираем текст в зависимости от позиции на которую нажали в recyclerview
 
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

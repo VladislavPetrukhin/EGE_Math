@@ -49,7 +49,7 @@ class TestActivity : AppCompatActivity() {
 
     private fun inflateExercise() { //выбираем текст в зависимости от позиции на которую нажали в recyclerview
         val textResourceId = resources.getIdentifier("test${position}_$numberOfQuestion","string",packageName)
-        binding.testTextView.text = resources.getString(textResourceId)
+        binding.testTextView.text = resources.getText(textResourceId)
         binding.testEditText.editText?.setText("")
     }
 
