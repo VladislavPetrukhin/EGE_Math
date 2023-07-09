@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_item1"
+        android:icon="@drawable/baseline_library_books_24"
+        android:title="ЕГЭ"
+        />
+    <item
+        android:id="@+id/nav_item2"
+        android:icon="@drawable/baseline_rule_24"
+        android:title="Правила экзамена"
+        />
+    <item
+        android:id="@+id/nav_item3"
+        android:icon="@drawable/baseline_help_24"
+        android:title="Справочные материалы"
+        />
+    <item
+        android:id="@+id/nav_item4"
+        android:icon="@drawable/baseline_emoji_emotions_24"
+        android:title="Мотивация"
+        />
+    <item
+        android:id="@+id/nav_item5"
+        android:icon="@drawable/baseline_query_stats_24"
+        android:title="Статистика"
+        />
+    <item
+        android:id="@+id/nav_item6"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Настройки"
+        />
+    <item
+        android:id="@+id/nav_item7"
+        android:icon="@drawable/baseline_rss_feed_24"
+        android:title="Связь с разработчиком"
+        />
+</menu>

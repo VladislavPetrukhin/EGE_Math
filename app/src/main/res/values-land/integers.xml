@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="teory_count">18</integer>
+    <integer name="test_count">18</integer>
+    <integer name="trial_variants_count">0</integer>
+    <integer name="exercisesInTests_count">3</integer>
+    <integer name="exercisesInTrialVariants_count">18</integer>
+    <integer name="motivation_notification_count">10</integer>
+    <integer name="columnCount">2</integer>
+    <integer name="columnCountTrialVariantsExercise">6</integer>
+    <integer name="smallTextSize">16</integer>
+    <integer name="mediumTextSize">18</integer>
+    <integer name="bigTextSize">20</integer>
+</resources>

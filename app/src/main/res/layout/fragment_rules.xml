@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.RulesFragment">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/TextViewColor"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/rulesTextViewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/TextViewColor"
+            android:textAlignment="center"
+            android:text="@string/rules_text_header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/rulesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="18sp"
+            style="@style/TextViewColor"
+            android:text="@string/rules_text" />
+    </ScrollView>
+    </LinearLayout>
+</FrameLayout>
+</layout>
