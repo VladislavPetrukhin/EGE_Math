@@ -40,6 +40,9 @@ class MainFragment : Fragment() {
             intent.putExtra("userSelectedMode","trialVariants")
             startActivity(intent)
         }
+        if(resources.getInteger(R.integer.trial_variants_count) == 0){
+            binding.buttonTrialVariants.visibility = View.GONE
+        }
 
         return binding.root
     }

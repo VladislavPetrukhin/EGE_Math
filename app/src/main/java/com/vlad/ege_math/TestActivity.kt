@@ -25,6 +25,9 @@ class TestActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_test)
         position = intent.getIntExtra("position",1)
 
+        val textResourceId = resources.getIdentifier("test_name$position","string",packageName)
+        supportActionBar?.title = resources.getText(textResourceId)
+
         val defaultSharedPref = PreferenceManager.getDefaultSharedPreferences(applicationContext)
         val fontSize = defaultSharedPref.getString("pref_key_font_size", resources.getInteger(R.integer.mediumTextSize).toString()).toString()
         binding.testTextView.textSize = fontSize.toFloat()

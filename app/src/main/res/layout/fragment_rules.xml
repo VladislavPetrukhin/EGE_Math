@@ -23,6 +23,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <TextView
             android:id="@+id/rulesTextView"
             android:layout_width="match_parent"
@@ -32,6 +36,15 @@
             android:textSize="18sp"
             style="@style/TextViewColor"
             android:text="@string/rules_text" />
+            <ImageView
+                android:src="@drawable/tableinfo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:src="@drawable/tableinfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
     </ScrollView>
     </LinearLayout>
 </FrameLayout>

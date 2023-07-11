@@ -105,7 +105,9 @@ class SettingsFragment : PreferenceFragmentCompat(), OnSharedPreferenceChangeLis
             }
         } else if (preferences.key.toString() == "pref_key_notifications") {  //подключаем уведомления, если были включены в pref
             val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
-            sharedPreferences.edit().putBoolean(key, preferences.isChecked).apply()
+            val sharedPref = requireContext().getSharedPreferences("MyPref", Context.MODE_PRIVATE)
+            val notifyWereRefused = sharedPref.getBoolean("notifyWereRefused",false)
+            sharedPreferences.edit().putBoolean(key, !notifyWereRefused).apply()
             if (preferences.isChecked) {
                 val sharedPref =
                     requireContext().getSharedPreferences("MyPref", Context.MODE_PRIVATE)

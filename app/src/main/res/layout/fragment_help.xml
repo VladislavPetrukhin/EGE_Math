@@ -26,7 +26,6 @@
                 android:scaleType="fitStart"
                 android:src="@drawable/table2" />
 
-
         </LinearLayout>
     </ScrollView>
 

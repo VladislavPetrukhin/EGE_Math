@@ -67,6 +67,11 @@ class StatisticsFragment : Fragment() {
         binding.testResTitleTextView.text = string
     }
     private fun checkTrialVariantsRes(){  //проверяет пробники
+        if(requireContext().resources.getInteger(R.integer.trial_variants_count) == 0){
+            binding.probnikResTextView.visibility = View.GONE
+            binding.probnikResTitleTextView.visibility = View.GONE
+            return
+        }
         val sharedPref = requireContext().getSharedPreferences("MyPref", Context.MODE_PRIVATE)
         val pr1Res = sharedPref.getString("pr1_res","-1")?.toInt()
         val string = if(pr1Res == -1){
